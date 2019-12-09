@@ -1,0 +1,46 @@
+Normality tests
+D'agostino-Pearson: Reject normality if pvalue<=α=0.05
+Test on Random Classifier
+p=0.8433 > α=0.05.	Fail to reject H0, that the accuracies are following a Gaussian distribution.
+Test on Logistic Regression
+p=1.235e-05 <= α=0.05.	Reject H0, that the accuracies are following a Gaussian distribution.
+Test on Support Vector Classifier
+p=0.3868 > α=0.05.	Fail to reject H0, that the accuracies are following a Gaussian distribution.
+Test on Neural Net (Multilayer Perceptron)
+p=0.01605 <= α=0.05.	Reject H0, that the accuracies are following a Gaussian distribution.
+
+Anderson-Darling
+Test on Random Classifier
+Statistic: 0.406
+At α=0.100: we have our critical value 0.64>0.406;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.050: we have our critical value 0.767>0.406;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.025: we have our critical value 0.895>0.406;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.010: we have our critical value 1.06>0.406;	the distribution of accuracies is feasibly normal (fail to reject H0)
+Test on Logistic Regression
+Statistic: 0.803
+At α=0.100: we have our critical value 0.64<=0.803;	the distribution of accuracies does not look normal (reject H0)
+At α=0.050: we have our critical value 0.767<=0.803;	the distribution of accuracies does not look normal (reject H0)
+At α=0.025: we have our critical value 0.895>0.803;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.010: we have our critical value 1.06>0.803;	the distribution of accuracies is feasibly normal (fail to reject H0)
+Test on Support Vector Classifier
+Statistic: 0.303
+At α=0.100: we have our critical value 0.64>0.303;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.050: we have our critical value 0.767>0.303;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.025: we have our critical value 0.895>0.303;	the distribution of accuracies is feasibly normal (fail to reject H0)
+At α=0.010: we have our critical value 1.06>0.303;	the distribution of accuracies is feasibly normal (fail to reject H0)
+Test on Neural Net (Multilayer Perceptron)
+Statistic: 1.186
+At α=0.100: we have our critical value 0.64<=1.19;	the distribution of accuracies does not look normal (reject H0)
+At α=0.050: we have our critical value 0.767<=1.19;	the distribution of accuracies does not look normal (reject H0)
+At α=0.025: we have our critical value 0.895<=1.19;	the distribution of accuracies does not look normal (reject H0)
+At α=0.010: we have our critical value 1.06<=1.19;	the distribution of accuracies does not look normal (reject H0)
+
+Shapiro-Wilk: Reject normality if pvalue<=α=0.05
+Test on Random Classifier
+p=0.6759 > α=0.05.	Fail to reject H0, that the accuracies are following a Gaussian distribution.
+Test on Logistic Regression
+p=0.0006843 <= α=0.05.	Reject H0, that the accuracies are following a Gaussian distribution.
+Test on Support Vector Classifier
+p=0.261 > α=0.05.	Fail to reject H0, that the accuracies are following a Gaussian distribution.
+Test on Neural Net (Multilayer Perceptron)
+p=0.002612 <= α=0.05.	Reject H0, that the accuracies are following a Gaussian distribution.
